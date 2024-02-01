@@ -5,7 +5,7 @@ import altair as alt
 
 st.set_page_config(layout='wide')
 
-df = pd.read_csv("D:\DQLAB TETRIS BATCH 4 START 20240105\MATERI PYTHON\Session 6 - Bulding Interactive Dashboard with Python (2) - Python Streamlit\superstore.csv")
+df = pd.read_csv("superstore.csv")
 
 df['order_date'] = pd.to_datetime(df['order_date'])
 df['ship_date'] = pd.to_datetime(df['ship_date'])
