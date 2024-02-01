@@ -53,7 +53,7 @@ with mx_sales:
     
     sales_diff_pct = 100.0 * (curr_sales - prev_sales) / prev_sales
 
-    st.metric("Sales", value=nformat_big_number(curr_sales), delta=f'{sales_diff_pct:.2f}%')
+    st.metric("Sales", value=format_big_number(curr_sales), delta=f'{sales_diff_pct:.2f}%')
 
 # with mx_order:
 #     st.metric("Number of Order", value=100, delta=10)
